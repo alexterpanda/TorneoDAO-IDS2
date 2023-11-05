@@ -1,0 +1,55 @@
+package dtos;
+
+import java.util.List;
+
+public class Equipo {
+    private int id;
+    private String nombre;
+    private String deporte;
+    private List<Jugador> integrantes;
+
+    public Equipo() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getDeporte() {
+        return deporte;
+    }
+
+    public void setDeporte(String deporte) {
+        this.deporte = deporte;
+    }
+
+    public List<Jugador> getIntegrantes() {
+        return integrantes;
+    }
+
+    public void setIntegrantes(List<Jugador> integrantes) {
+        this.integrantes = integrantes;
+    }
+
+    @Override
+    public String toString() {
+        return "Equipo{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", deporte='" + deporte + '\'' +
+                ", integrantes=" + integrantes +
+                '}';
+    }
+}
